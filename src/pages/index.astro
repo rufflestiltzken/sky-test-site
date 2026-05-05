@@ -1,17 +1,165 @@
 ---
-
+import '../styles/global.css';
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>SKY Aviation Group | Aircraft Charter & Operations Support</title>
+    <meta
+      name="description"
+      content="Private aircraft charter, aircraft management, and operational trip support for piston and turboprop aircraft."
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="#top" class="brand" aria-label="SKY Aviation Group home">
+        <img src="/assets/logo-transparency.avif" alt="SKY Aviation Group" />
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#operations">Operations Support</a>
+        <a href="#fleet">Fleet</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-bg" aria-hidden="true">
+          <img src="/assets/kodiak-landing-gc.jpeg" alt="" />
+        </div>
+        <div class="hero-content">
+          <img class="hero-logo" src="/assets/logo-transparency.avif  " alt="SKY Aviation Group" />
+          <p class="eyebrow">Private aviation, simplified</p>
+          <h1>Aircraft charter and operations support for regional travel.</h1>
+          <p class="hero-copy">
+            SKY Aviation Group supports aircraft owners and travellers with charter, management, and trip coordination services designed to keep every flight smooth, legal, and efficient.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contact">Connect with us</a>
+            <a class="button secondary" href="#fleet">Meet the fleet</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section dark">
+        <div class="section-inner">
+          <p class="eyebrow">What we do</p>
+          <h2>Services</h2>
+          <div class="service-grid">
+            <article class="service-card">
+              <div class="icon">▱</div>
+              <h3>Aircraft Management</h3>
+              <p>SKY Aviation Group specializes in management of high-value piston and turboprop aircraft.</p>
+            </article>
+            <article class="service-card">
+              <div class="icon">✈</div>
+              <h3>Operational Trip Support</h3>
+              <p>SKY Aviation Group provides the services required to ensure your trips run smoothly, legally, and efficiently.</p>
+            </article>
+            <article class="service-card">
+              <div class="icon">◇</div>
+              <h3>Aircraft Charter</h3>
+              <p>Have complete control over your schedule, destinations, and experience when you charter with SKY Aviation Group.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="operations" class="operations dark split-section">
+        <div class="split-image">
+          <img src="/assets/m700-parked.jpeg" alt="Piper M700 aircraft on a snowy taxiway" />
+        </div>
+        <div class="section-inner narrow">
+          <p class="eyebrow">Owner and operator support</p>
+          <h2>Private Aircraft Operations Support</h2>
+          <div class="support-list">
+            <article>
+              <h3>Customs Coordination</h3>
+              <p>Effortless clearance support for arrivals and departures.</p>
+            </article>
+            <article>
+              <h3>US & Caribbean APIS Submissions</h3>
+              <p>Accurate and timely submission of passenger and crew information to meet border requirements.</p>
+            </article>
+            <article>
+              <h3>Airport, FBO, & Fuel Coordination</h3>
+              <p>Negotiated airport, FBO, and fuel solutions to support availability and competitive pricing worldwide.</p>
+            </article>
+            <article>
+              <h3>Flight Following</h3>
+              <p>Real-time flight monitoring for enhanced safety, efficiency, and communication.</p>
+            </article>
+            <article>
+              <h3>Aircraft Maintenance Coordination</h3>
+              <p>Oversight of scheduled and unscheduled maintenance with trusted maintenance partners.</p>
+            </article>
+            <article>
+              <h3>Aircraft Annual Financial Reporting</h3>
+              <p>Detailed cost tracking and transparent financial reporting for owners and operators.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="fleet" class="section light">
+        <div class="section-inner">
+          <p class="eyebrow">Aircraft</p>
+          <h2>Meet the Fleet</h2>
+          <div class="fleet-grid">
+            <article class="fleet-card">
+              <img src="/assets/kodiak-docked.jpeg" alt="Kodiak 100 float plane docked at a lake" />
+              <div class="fleet-content">
+                <p class="make">Daher</p>
+                <h3>Kodiak 100</h3>
+                <p>4–5 passenger comfort in a modern float plane. Perfect for flights from the city to the lake. Certified for day, night, and poor visibility IFR flying. Always flown with two pilots.</p>
+              </div>
+            </article>
+            <article class="fleet-card">
+              <img src="/assets/m700-parked.jpeg" alt="Piper M700 aircraft parked on an airport taxiway" />
+              <div class="fleet-content">
+                <p class="make">Piper</p>
+                <h3>M700</h3>
+                <p>2–4 passenger capacity in a new Piper aircraft. Well suited for regional flights where speed and efficiency are required. Certified for day, night, and poor visibility IFR flying. Always flown with two pilots.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section dark">
+        <div class="contact-card">
+          <div class="contact-details">
+            <img src="/assets/logo-transparency.avif" alt="SKY Aviation Group" />
+            <div>
+              <p><a href="tel:+16473616227">+1 647 361 6227</a></p>
+              <p><a href="mailto:info@fly-sky.ca">info@fly-sky.ca</a></p>
+            </div>
+            <div class="legal-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Use</a>
+            </div>
+          </div>
+
+          <form class="contact-form" name="contact" method="post">
+            <h2>Connect With Us</h2>
+            <div class="form-row">
+              <label>First name *<input type="text" name="first-name" required /></label>
+              <label>Last name *<input type="text" name="last-name" required /></label>
+            </div>
+            <div class="form-row">
+              <label>Email *<input type="email" name="email" required /></label>
+              <label>Phone *<input type="tel" name="phone" required /></label>
+            </div>
+            <label>Message *<textarea name="message" rows="5" required></textarea></label>
+            <button type="submit">Submit</button>
+            <p class="fine-print">© 2025 by Sky Aviation Group Inc. Secure payments powered by Moneris.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
