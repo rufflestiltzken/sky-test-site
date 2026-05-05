@@ -20,12 +20,27 @@ import '../styles/global.css';
       <a href="#top" class="brand" aria-label="SKY Aviation Group home">
         <img src="/assets/logo-transparency.avif" alt="SKY Aviation Group" />
       </a>
-      <nav class="nav" aria-label="Main navigation">
-        <a href="#services">Services</a>
-        <a href="#operations">Operations Support</a>
-        <a href="#fleet">Fleet</a>
-        <a href="#contact" class="nav-cta">Contact</a>
-      </nav>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+  Menu
+</button>
+
+<nav class="nav" aria-label="Main navigation">
+  <a href="#services">Services</a>
+  <a href="#operations">Operations Support</a>
+  <a href="#fleet">Fleet</a>
+  <a href="#contact" class="nav-cta">Contact</a>
+</nav>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav');
+
+  toggle?.addEventListener('click', () => {
+    nav?.classList.toggle('open');
+    const isOpen = nav?.classList.contains('open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
+</script>
     </header>
 
     <main id="top">
